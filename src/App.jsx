@@ -1,6 +1,6 @@
 // This file contains the website's content and component structure
 import './App.css'
-import profileImage from './assets/profile.png'
+import profileImage from './assets/newprofile.jpeg'
 
 // This object stores the words and links shown on the page.
 // You can edit the text here without needing to change the layout below.
@@ -12,7 +12,7 @@ const siteInfo = {
   name: 'Sneha Balaji',
   role: 'Computer Science @ UF',
   intro: 'I\'m a first-year student at the University of Florida, pursuing a degree in Computer Science. I am passionate about software development but also have a love for languages and writing. I hope to be able to pursue projects at the intersection of these interests, and I am excited to see where my curiosity takes me.',
-  // Replace profile.png in src/assets to use your own profile picture.
+  // Replace newprofile.jpeg in src/assets to use your own profile picture.
   image: profileImage,
   location: 'Based in Gainesville, FL',
   email: 'sneha.balaji1007@gmail.com',
@@ -28,7 +28,7 @@ const siteInfo = {
     },
     {
       title: 'Studious Seekers',
-      description: 'A design team project that uses Python, React, and other technologies to create a user-friendly map of study spots aroung UF for over 50,000 students. My focus is on backend data and classifying study spots based on characteristics like noise level, capacity, and accessibility.',
+      description: 'A design team project that uses Python, React, and other technologies to create a user-friendly map of study spots around UF for over 50,000 students. My focus is on backend data and classifying study spots based on characteristics like noise level, capacity, and accessibility.',
       tag: 'React & Python Project',
     },
   ],
@@ -72,7 +72,9 @@ function App() {
 
           {/* The image path and location come from siteInfo above. */}
           <div className="profile">
-            <img className="profile-picture" src={siteInfo.image} alt={`Portrait of ${siteInfo.name}`} />
+            <div className="profile-picture">
+              <img src={siteInfo.image} alt={`Portrait of ${siteInfo.name}`} />
+            </div>
             <p>{siteInfo.location}</p>
           </div>
         </section>
