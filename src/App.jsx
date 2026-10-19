@@ -22,9 +22,9 @@ const siteInfo = {
   // Add a new project by copying one of these lines and changing its words.
   projects: [
     {
-      title: 'Blackjack Game',
-      description: 'A simplified version of Blackjack that uses loops, if/else statements, and other foundational Python concepts to create an interactive experience for users. It was a great way to test my understanding of Python concepts in practice. No need to lose money playing in real life :)',
-      tag: 'Python Project',
+      title: 'Go Phish',
+      description: 'A fully functional website made during the SwampHacks hackathon. It uses Figma, Gemini API, Python, HTML, CSS, and JavaScript. It allows the user to paste or upload text or upload audio to the site, which processes the input and provides the likelihood of the input being a phishing attempt. The site also provides a breakdown of the reasoning behind the score given, highlighting any suspicious words or phrases.',
+      tag: ['Python Project', 'Figma', 'Gemini API'],
     },
     {
       title: 'Studious Seekers',
