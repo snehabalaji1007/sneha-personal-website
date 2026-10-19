@@ -18,7 +18,7 @@ const siteInfo = {
   email: 'sneha.balaji1007@gmail.com',
   about: 'I love the process of figuring out how things work—whether that’s solving puzzles, picking up a new developer tool, or learning from peers who are genuinely excited about what they do. I\'m just starting my journey in computer science, and this website is simply a place to share my projects and notes as I learn along the way.  I am always open to feedback and new ways to grow.',
   // Add, remove, or rename languages and tools in this list.
-  skills: ['JavaScript', 'Python', 'React', 'HTML & CSS', 'Git & GitHub'],
+  skills: ['JavaScript', 'Python', 'React', 'HTML & CSS', 'Git & GitHub', 'Figma'],
   // Add a new project by copying one of these lines and changing its words.
   projects: [
     {
