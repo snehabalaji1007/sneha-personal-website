@@ -23,8 +23,8 @@ const siteInfo = {
   projects: [
     {
       title: 'Go Phish',
+      url: 'https://gophish.us',
       description: 'A fully functional website made during the SwampHacks hackathon. It uses Figma, Gemini API, Python, HTML, CSS, and JavaScript. It allows the user to paste or upload text or upload audio to the site, which then provides the percentage likelihood of the input being a phishing attempt. The site also provides a breakdown of the reasoning behind the score given, highlighting any suspicious words or phrases.',
-      link: 'Check out the project here: gophish.us'
       tag: 'Python Project, Figma, and Gemini API',
     },
     {
@@ -104,19 +104,27 @@ function App() {
             <h2>Things I’m Making:</h2>
 
             <div className="project-list">
-              {siteInfo.projects.map((project, index) => (
-                // React needs a key so it can keep track of each project row.
-                <article className="project" key={project.title}>
-                  <div className="project-meta">
-                    <p className="project-number">0{index + 1}</p>
-                    <p className="project-tag">{project.tag}</p>
-                    <span className="project-arrow" aria-hidden="true">↗</span>
-                  </div>
-                  <h3>{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
-                  <div className="project-rule" aria-hidden="true" />
-                </article>
-              ))}
+              {siteInfo.projects.map((project, index) => {
+                const ProjectElement = project.url ? 'a' : 'article'
+
+                return (
+                  <ProjectElement
+                    className="project"
+                    key={project.title}
+                    href={project.url}
+                    aria-label={project.url ? `Open ${project.title} project` : undefined}
+                  >
+                    <div className="project-meta">
+                      <p className="project-number">0{index + 1}</p>
+                      <p className="project-tag">{project.tag}</p>
+                      <span className="project-arrow" aria-hidden="true">↗</span>
+                    </div>
+                    <h3>{project.title}</h3>
+                    <p className="project-description">{project.description}</p>
+                    <div className="project-rule" aria-hidden="true" />
+                  </ProjectElement>
+                )
+              })}
             </div>
           </div>
         </section>
