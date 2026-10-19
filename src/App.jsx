@@ -24,7 +24,7 @@ const siteInfo = {
     {
       title: 'Go Phish',
       url: 'https://gophish.us',
-      description: 'A fully functional website made during the SwampHacks hackathon. It uses Figma, Gemini API, Python, HTML, CSS, and JavaScript. It allows the user to paste or upload text or upload audio to the site, which then provides the percentage likelihood of the input being a phishing attempt. The site also provides a breakdown of the reasoning behind the score given, highlighting any suspicious words or phrases.',
+      description: 'A fully functional website made during the SwampHacks hackathon. It uses Figma, Gemini API, Python, HTML, CSS, and JavaScript. It allows the user to paste or upload text or upload audio to the site, which then provides the percentage likelihood of the input being a phishing attempt. The site also provides a breakdown of the reasoning behind the score given, highlighting any suspicious words or phrases. Click to see the live site!',
       tag: 'Python Project, Figma, & Gemini API',
     },
     {
